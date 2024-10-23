@@ -2,17 +2,22 @@ package org.dhanush.learnspringframework.game;
 
 public class GameRunner {
 
-    MarioGame marioGame;
+    //private MarioGame game;
+    private SuperContraGame game;
 
-    public GameRunner(MarioGame marioGame) {
-        this.marioGame = marioGame;
+//    public GameRunner(MarioGame game) {
+//        this.game = GameRunner.this.game;
+//    }
+
+    public GameRunner(SuperContraGame game){
+        this.game = game;
     }
 
     public void run() {
-        System.out.println("Game Running: " + marioGame);
-        marioGame.up();
-        marioGame.down();
-        marioGame.left();
-        marioGame.right();
+        System.out.println("Game Running: " + game);
+        game.up();
+        game.down();
+        game.left();
+        game.right();
     }
 }
