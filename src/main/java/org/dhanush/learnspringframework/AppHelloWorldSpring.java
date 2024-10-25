@@ -1,6 +1,8 @@
 /*
     if there was a main method in the class then we can consider that
     the JVM is running
+    we have created a spring context in here
+    by AnnotationConfigApplicationContext and put that to the var context.
 
  */
 
@@ -17,6 +19,11 @@ public class AppHelloWorldSpring {
 
         // 2. Configure the things that we want Spring to manage.
         // by -@Configuration
+        System.out.println(context.getBean("name")); //This calls the
+        // bean[method] which is named as name. should be in "" rather than
+        // name()
+
+
 
     }
 }
