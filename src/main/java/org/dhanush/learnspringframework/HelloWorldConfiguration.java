@@ -14,4 +14,25 @@ public class HelloWorldConfiguration {
     public String name(){
         return "Dhanush";
     }
+
+    @Bean
+    public int age(){
+        return 22;
+    }
+
+    @Bean
+    public String Person(){
+        return "Person";
+    }
+
+    @Bean
+    public String Person2(){
+        return "Person2";
+    }
+
+    @Bean
+    public String address(){
+        return "Mysore";
+    }
+    
 }

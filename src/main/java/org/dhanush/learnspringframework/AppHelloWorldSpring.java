@@ -23,6 +23,10 @@ public class AppHelloWorldSpring {
         // bean[method] which is named as name. should be in "" rather than
         // name()
 
+        System.out.println(context.getBean("age"));
+        System.out.println(context.getBean("Person"));
+        System.out.println(context.getBean("Person2"));
+        System.out.println(context.getBean("address"));
 
 
     }
