@@ -37,5 +37,17 @@ public class HelloWorldConfiguration {
     public Address address(){
         return new Address("vivekananda nagar","Mysore");
     }
+
+    /*
+        2 methods to use other objects to be used in our bean
+        1. Method call
+        2. Method Parameters
+     */
+
+    @Bean
+    public Person person2MethodCall(){
+        return new Person(name(), age());
+    }
+
     
 }
