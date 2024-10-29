@@ -22,7 +22,3 @@ Spring Container/Spring Context/IOC[Inversion Of Container] Container:
         2. Application Context:
             Advance Spring Container with enterprise specific features
 
-
-Java Bean vs Spring Bean vs Pojo[Plain Old Java Object]:
-Pojo does no
-
