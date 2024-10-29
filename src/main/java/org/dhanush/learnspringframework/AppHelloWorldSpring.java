@@ -10,6 +10,8 @@ package org.dhanush.learnspringframework;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.Arrays;
+
 public class AppHelloWorldSpring {
     public static void main(String[] args) {
         // 1. Launch a Spring context
@@ -29,6 +31,9 @@ public class AppHelloWorldSpring {
         System.out.println(context.getBean("address"));
         System.out.println(context.getBean("person2MethodCall"));
         System.out.println(context.getBean("person3Parameter"));
+
+        //All the bean names which are present is printed
+        Arrays.stream(context.getBeanDefinitionNames()).forEach(System.out::println);
 
     }
 }

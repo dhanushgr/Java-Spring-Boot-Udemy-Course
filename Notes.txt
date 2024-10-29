@@ -9,3 +9,20 @@ Tightly coupled:
         If you give diff variable names for each game, then run() method has
         to change, according to the game, every time.
 
+Loosely Coupled:
+        we can make it loosely coupled by making iit connect to a interface and
+        using it by implementing that interface to the class which are connected
+
+
+Spring Container/Spring Context/IOC[Inversion Of Container] Container:
+    - which manages the Spring Beans and their lifecycle.
+    - has 2 types of spring containers
+        1. Bean Factory:
+            most basic container
+        2. Application Context:
+            Advance Spring Container with enterprise specific features
+
+
+Java Bean vs Spring Bean vs Pojo[Plain Old Java Object]:
+Pojo does no
+
