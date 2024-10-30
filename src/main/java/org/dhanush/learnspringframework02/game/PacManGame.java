@@ -1,5 +1,12 @@
 package org.dhanush.learnspringframework02.game;
 
+import org.springframework.stereotype.Component;
+
+/*
+    Adding @Component tells Spring that, this is a component and it should
+    manage it and it creates a @Bean for us, instead of us creating it ourselves
+ */
+@Component
 public class PacManGame implements GamingConsole {
 
     @Override
