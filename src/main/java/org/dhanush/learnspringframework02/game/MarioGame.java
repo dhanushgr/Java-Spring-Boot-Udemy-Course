@@ -1,5 +1,13 @@
 package org.dhanush.learnspringframework02.game;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+/*
+    @Primary annotation makes sure that this file runs when there are more
+    than one @component assigned to different files
+ */
+@Component
+@Primary
 public class MarioGame implements GamingConsole {
 
     public void up(){

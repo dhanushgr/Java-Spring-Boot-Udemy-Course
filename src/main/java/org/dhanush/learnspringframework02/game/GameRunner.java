@@ -11,14 +11,19 @@ package org.dhanush.learnspringframework02.game;
         to change, according to the game, every time.
  */
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class GameRunner {
 
     private GamingConsole game;
-
-    public GameRunner(GamingConsole game){
+/*
+    if Qualifier is mentioned in any game, then it should be explicitly
+    mentioned in here.
+    In @Primary and @Qualifier, @Qualifier gets first preference
+ */
+    public GameRunner(@Qualifier("SuperContraGameQualifier") GamingConsole game){
         this.game = game;
     }
 
