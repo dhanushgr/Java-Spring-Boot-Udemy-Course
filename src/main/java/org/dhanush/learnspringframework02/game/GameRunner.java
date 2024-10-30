@@ -11,6 +11,9 @@ package org.dhanush.learnspringframework02.game;
         to change, according to the game, every time.
  */
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
 
     private GamingConsole game;
