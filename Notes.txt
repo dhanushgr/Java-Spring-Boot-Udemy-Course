@@ -22,3 +22,10 @@ Spring Container/Spring Context/IOC[Inversion Of Container] Container:
         2. Application Context:
             Advance Spring Container with enterprise specific features
 
+In @Primary and @Qualifier, @Qualifier gets first preference
+
+Dependency Injection is of Three types:
+1. Constructor-based
+2. Setter-based
+3. Field
+
