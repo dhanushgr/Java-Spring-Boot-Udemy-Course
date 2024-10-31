@@ -1,10 +1,10 @@
-package org.dhanush.learnspringframework02;
+package org.dhanush.learnspringframework02.examples.a0;
 
-import org.dhanush.learnspringframework02.game.GameRunner;
-import org.dhanush.learnspringframework02.game.GamingConsole;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+
+import java.util.Arrays;
 
 /*
     @ComponentScan should be added in this file with a package name where it
@@ -12,17 +12,15 @@ import org.springframework.context.annotation.Configuration;
     mentioned @Component file
  */
 @Configuration
-@ComponentScan("org.dhanush.learnspringframework02.game")
-public class GamingAppLauncherApplication {
+@ComponentScan
+public class SimpleSpringContextLauncherApplication {
 
     public static void main(String[] args) {
 
         var context =
-                new AnnotationConfigApplicationContext(GamingAppLauncherApplication.class);
-
-        context.getBean(GamingConsole.class).up();
-
-        context.getBean(GameRunner.class).run();
+                new AnnotationConfigApplicationContext(SimpleSpringContextLauncherApplication.class);
+        Arrays.stream(context.getBeanDefinitionNames())
+                .forEach(System.out::println);
 
     }
 }
