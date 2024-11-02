@@ -1,4 +1,4 @@
-package org.dhanush.learnspringframework02.examples.a0;
+package org.dhanush.learnspringframework02.Topics.StandardContext;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;

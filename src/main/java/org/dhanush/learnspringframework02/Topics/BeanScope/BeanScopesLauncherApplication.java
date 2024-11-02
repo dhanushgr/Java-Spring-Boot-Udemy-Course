@@ -1,4 +1,4 @@
-package org.dhanush.learnspringframework02.examples.e1;
+package org.dhanush.learnspringframework02.Topics.BeanScope;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -6,8 +6,6 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
 
 /*
     @ComponentScan should be added in this file with a package name where it

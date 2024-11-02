@@ -1,4 +1,4 @@
-package org.dhanush.learnspringframework02.examples.a1;
+package org.dhanush.learnspringframework02.Topics.DependencyInjection;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

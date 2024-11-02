@@ -1,12 +1,10 @@
-package org.dhanush.learnspringframework02.examples.c1;
+package org.dhanush.learnspringframework02.Topics.Lazy;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
-
-import java.util.Arrays;
 
 /*
     @ComponentScan should be added in this file with a package name where it
