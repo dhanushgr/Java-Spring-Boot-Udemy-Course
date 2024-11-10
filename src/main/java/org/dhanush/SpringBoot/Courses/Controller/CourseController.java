@@ -12,7 +12,13 @@ public class CourseController {
 
     @GetMapping("/Courses")
     public List<Courses> getAllCourses(){
-        return Arrays.asList(new Courses(1, "Java Programming", "Dhanush"));
+        return Arrays.asList(new Courses(1, "Java Programming", "Dhanush"),
+                new Courses(2, "SpringBoot", "Danny"));
+    }
+
+    @GetMapping("/Courses/1")
+    public Courses getCourseDetails(){
+        return new Courses(1, "Java Programming", "Dhanush");
     }
 
 }
