@@ -1,6 +1,6 @@
-package org.dhanush.JpaAndHibernate.Course.jdbc;
+package org.dhanush.JpaAndHibernate.CourseProject.jdbc;
 
-import org.dhanush.JpaAndHibernate.Course.Course;
+import org.dhanush.JpaAndHibernate.CourseProject.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
